@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section {
+            width: 800px;
+            border: 3px double #123456;
+            font-family: cursive;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        section h1 {
+            font-size: 42px;
+            background: #ccc;
+            margin: 0 auto;
+            padding: 10px;
+           
+        }
+
+        
+        .intro {
+            font-size: 18px;
+            background: #464141;
+            color: white;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+    .gallery {
+        width: 100%;
+        font-size: auto;
+        padding: 10px;
+        background: grey;
+        
+    }
+    .h2 {
+        width: 25%;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    #tulip {
+        background: red;
+        background-image: url(./img/tulip.jpg);
+        width: 25%;
+    }
+    #jebi {
+        background: violet;
+        background-image: url(./img/jebi.jpg) ;
+        width: 25%;
+    }
+
+    #hobak {
+        background: orange;
+        background-image: url(./img/hobak.jpg);
+        width: 25%;
+    }
+
+    #sunflower {
+        background: yellow;
+        background-image: url(./img/sunflower.jpg);
+        width: 25%;
+
+    }
+    .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h1>나의 아름다운 정원</h1>
+        <p class="intro">
+            사람들은 아마 자신에게 자신감을 북돋워 주는
+            표정 있는 꽃들을 선호할 것이다.
+        </p>
+        <ul class="gallery clearfix">
+            <li id="tulip"> <!--각 h2에 background 속성을 이용하여 url로 꽃 이미지 넣기-->
+                <h2> </h2> 
+                <p> 너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="jebi">
+                <h2></h2>
+                <p> 드물게 푸른색을 띠고 있으며 작지만 시원해보이는 어린 꽃이라고 할 수 있다. 
+                    여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="hobak">
+                <h2></h2>
+                <p> 색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우 완숙한
+                    이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="sunflower">
+                <h2></h2>
+                <p> 태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에 속하며 송이가 적어야 제격이다.</p>
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>

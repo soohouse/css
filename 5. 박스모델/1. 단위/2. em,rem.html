@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html {
+            font-size: 10px;
+        }
+        body * {
+            border: 2px solid black;
+        }
+
+        .container {
+            width: 60em;
+            font-size: 20px;
+        }
+
+        .parent {
+            width: 50%;
+            font-size: 2em;
+            /* 1em=16px html의 기본 폰트 16px(parent에서 정한 것 물려받음)
+                rem은 html의 기본 폰트의 몇배인지 볼 수 있음
+                배율로 이용할 수 있는 단위가 em과 rem*/
+        }
+
+        .child {
+            width: 30;
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">container
+        <div class="parent">parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+    
+</body>
+</html>
